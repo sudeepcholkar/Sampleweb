@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FRUIT=("ICEAPPLE","JACKFRUIT","MANGO") #Array
+FRUIT=("ICEAPPLE" "JACKFRUIT" "MANGO") #Array
 
 echo "First fruit ${FRUIT[0]}"
 echo "second fruit ${FRUIT[1]}"
