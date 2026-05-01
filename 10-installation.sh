@@ -9,7 +9,7 @@ then
 fi 
 
 #check status of mysql 
-dnf list installed mysql
+dnf list installed mysql >> run_output.log
 
 if [ $? -ne 0 ]
 then
