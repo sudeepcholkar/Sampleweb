@@ -20,6 +20,7 @@ then
         echo "Could not proceed with intallation."
     else 
         echo "mysql installation success."
+    fi
 else
     echo "mysql is already installed."
 fi
