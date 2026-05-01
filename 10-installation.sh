@@ -7,3 +7,16 @@ then
     echo "Please use root user for installations"
     exit 1
 fi 
+
+#check status of mysql 
+dnf list installed mysql
+
+if [ $? -ne 0 ]
+then
+    echo "Package mysql is not installed. going to install."
+    dnf install mysql -y
+else
+    echo "mysql is already installed."
+fi
+
+
