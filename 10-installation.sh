@@ -14,7 +14,7 @@ dnf list installed mysql
 if [ $? -ne 0 ]
 then
     echo "Package mysql is not installed. going to install."
-    dnf install mysql -y
+    dnf install mysql -y >> run_output.log
     if [ $? -ne 0 ]
     then
         echo "Could not proceed with intallation."
